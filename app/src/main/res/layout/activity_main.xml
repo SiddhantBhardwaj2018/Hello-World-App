@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+  <!--
+    <TextView
+        android:id="@+id/MyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="#34EE00"
+        android:gravity="center"
+        android:inputType="text"
+
+        android:padding="20dp"
+        android:text="Hello My Friends!"
+        android:textAllCaps="true"
+
+        android:textColor="#2196F3"
+        android:textSize="28sp"
+
+        android:textStyle="bold"
+        android:typeface="serif"
+
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <EditText
+      android:id="@+id/myEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="20dp"
+
+      android:hint="Enter your name"
+      android:inputType="text"
+
+      android:maxLength="120"
+      android:textColor="#7381D1"
+      android:textSize="32sp"
+
+      android:textStyle="bold"
+
+
+      tools:layout_editor_absoluteX="37dp"
+      tools:layout_editor_absoluteY="248dp" />
+
+    <Button
+        android:id="@+id/myBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Click me"
+
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="348dp"
+
+        android:clickable="true"
+        android:enabled="true"
+
+        />
+    -->
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/blue"
+      android:text="@string/greeting"
+      android:textSize="32sp"
+      android:textStyle="bold"
+      android:fontFamily="@font/poppins"
+      app:layout_constraintBottom_toTopOf="@+id/button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/rounded_button"
+      android:text="Just A Button"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:backgroundTint="@null"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
